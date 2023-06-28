@@ -9,6 +9,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.gg6ad.mongodb.net/test?retr
 app.set('view engine','ejs')
 app.use(express.urlencoded({extended:false}))
 
+//code by shelly puram
 
 app.get('/', async (req,res) => {
     const shortUrls = await ShortUrl.find(); 
